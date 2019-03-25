@@ -1,0 +1,76 @@
+todo
+
+
+exeption if needed
+
+.exec(function (err, doc) {
+    if(err) { throw new Error('Contacts failed to get.') };
+    console.log(doc);
+})
+
+if (!contacts) {
+    throw new Error("There was an error retrieving your contacts.")
+} else {
+    ctx.body = contacts
+}
+
+
+paginacion que es? es lo que sigue de hacer >:^)
+
+http request. desde el frontend.
+
+lsof -i -P -n
+kill idprocess
+
+get pagination;
+    /contact?page=0&limit=2
+
+
+problems:
+    ✔ unique is counts null as unique @done(19-03-23 12:15)
+        solutitions
+        solved by: https://stackoverflow.com/questions/7955040/mongodb-mongoose-unique-if-not-null
+        
+things to solve:
+    ✘ get the front end to git @cancelled(19-03-23 15:19)
+        no encontre la carpeta de .git que me dijo daniel :sadfatcat
+        encontre el .git, ahora el problema es que ya corrompi el
+            repositorio
+
+
+
+    ✔ get the modify and delete to work @done(19-03-24 19:23)
+        ✔ first get the information of the contact onClick @done(19-03-24 18:02)
+            a small problem, you need to clic twice to change the values
+            ✔ actualy update the info to the database. @done(19-03-24 19:20)
+        ✔ parece que qse eleimino tengo que seguir priobando y actualizar el elstado o algo asi @done(19-03-24 18:02)
+        ✔ delete @done(19-03-24 16:35)
+
+
+    ✔ pagination @done(19-03-24 20:15)
+        front and backend
+        ✔ backend @done(19-03-24 14:32)
+        ✔ frontend @done(19-03-24 20:15)
+
+    ☐ checar por errores en front
+
+    
+
+    ✔ make the page view @done(19-03-23 20:29)
+        ✘ using bootstrap or something @cancelled(19-03-23 20:28)
+            just make it raw
+
+    ✔ implement atlasdb @done(19-03-23 17:02)
+
+    ☐ what to do if a douplicate error comes from the db
+    https://www.codereadability.com/what-are-javascript-linters/
+    i that should work
+
+    ☐ deploy to Heroku
+
+
+    ✔ problema menor, los fetch se hacer muy seguido, por que? quien sabe @done(19-03-24 19:23)
+        esto es un memory leak no le digas a nadie
+        solucionado quitando el componentWillReceiveProps
+
+    ☐ preguntar como actualizar sin causar un memory leak gigante

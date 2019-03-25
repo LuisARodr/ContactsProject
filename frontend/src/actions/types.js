@@ -1,0 +1,5 @@
+export const FETCH_POSTS = 'FETCH_POSTS'
+export const NEW_POST = 'NEW_POST'
+export const RECEIVE_ERROR = 'RECEIVE_ERROR'
+export const REMOVE_CONTACT = 'REMOVE_CONTACT'
+export const UPDATE_CONTACT = 'UPDATE_CONTACT'
